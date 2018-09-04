@@ -14,7 +14,7 @@
     "@storybook/react": "^3.4.10"
   },
   "scripts": {
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "start": "start-storybook -p 8080 -c .storybook"
   },
   "author": "Penn Labs",
   "license": "MIT"
