@@ -1,7 +1,7 @@
 {
   "name": "components",
   "version": "1.0.0",
-  "description": "",
+  "description": "A collection of re-useable UI components written in React.",
   "main": "index.js",
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -14,9 +14,8 @@
     "@storybook/react": "^3.4.10"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Penn Labs",
+  "license": "MIT"
 }
