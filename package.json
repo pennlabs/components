@@ -1,0 +1,22 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "bulma": "^0.7.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "storybook": "^1.0.0"
+  },
+  "devDependencies": {
+    "@storybook/react": "^3.4.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 9001 -c .storybook"
+  },
+  "author": "",
+  "license": "ISC"
+}
