@@ -17,7 +17,7 @@ const LoginForm = () => {
           <input class="input" type="password" placeholder="e.g. ilovelabs123"/>
         </div>
       </div>
-
+      <a href="https://pennlabs.org/signup">Don't have a Labs account?</a>
       <button type="submit" class="button">Log In</button>
     </div>
   );
