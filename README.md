@@ -6,4 +6,4 @@ React components for the Penn Labs platform.
 2. Run `npm run storybook` to start server.
 
 ## License
-MIT Licensed
+MIT
