@@ -1,5 +1,5 @@
-# components
-React components for the Penn Labs platform.
+# Labs Components
+A collection of re-useable UI components written in React.
 
 ## Configuration
 1. Run `npm install` to install dependencies.
