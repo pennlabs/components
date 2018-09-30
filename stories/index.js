@@ -4,6 +4,7 @@ import Button from '../components/Button';
 import Card from '../components/Card';
 import LoginForm from '../components/LoginForm';
 import SignupForm from '../components/SignupForm';
+import Form from '../components/Form';
 import Hero from '../components/Hero';
 
 storiesOf('Button', module)
@@ -18,6 +19,11 @@ storiesOf('Card', module).add('Example product card', () =>
     image="https://pennlabs.org/img/PCR.png"
   />
 );
+
+storiesOf('Form', module).add("PCA Example", () => 
+  <Form />
+);
+
 
 storiesOf('LoginForm', module).add("Example", () => 
   <LoginForm />
