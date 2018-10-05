@@ -14,7 +14,10 @@
     "react-dom": "*"
   },
   "devDependencies": {
-    "@storybook/react": "3.4.11"
+    "@storybook/react": "3.4.11",
+    "prop-types": "15.6.2",
+    "react": "16.5.2",
+    "react-dom": "16.5.2"
   },
   "scripts": {
     "start": "start-storybook -p 8080 -c .storybook"
