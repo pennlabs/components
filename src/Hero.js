@@ -1,21 +1,25 @@
-import React from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
 import 'bulma/css/bulma.css'
 
-const Hero = (props) => {
-  return (
-    <section class="hero is-link is-medium">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            {props.title}
-          </h1>
-          <h2 class="subtitle">
-            {props.subtitle}
-          </h2>
-        </div>
+const Hero = ({ title, subtitle }) => (
+  <section className="hero is-link is-medium">
+    <div className="hero-body">
+      <div className="container">
+        <h1 className="title">
+          {title}
+        </h1>
+        <h2 className="subtitle">
+          {subtitle}
+        </h2>
       </div>
-    </section>
-  );
+    </div>
+  </section>
+)
+
+Hero.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
 }
 
-export default Hero;
+export default Hero
