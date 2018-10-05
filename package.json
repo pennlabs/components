@@ -10,6 +10,7 @@
     "storybook": "1.0.0"
   },
   "peerDependencies": {
+    "prop-types": "*",
     "react": "*",
     "react-dom": "*"
   },
