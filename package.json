@@ -4,15 +4,15 @@
   "description": "A collection of re-useable UI components written in React.",
   "main": "index.js",
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "bulma": "^0.7.1",
-    "isomorphic-unfetch": "^2.1.1",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "storybook": "^1.0.0"
+    "babel-core": "6.26.3",
+    "bulma": "0.7.1",
+    "isomorphic-unfetch": "3.0.0",
+    "react": "16.5.2",
+    "react-dom": "16.5.2",
+    "storybook": "1.0.0"
   },
   "devDependencies": {
-    "@storybook/react": "^3.4.10"
+    "@storybook/react": "3.4.11"
   },
   "scripts": {
     "start": "start-storybook -p 8080 -c .storybook"
