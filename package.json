@@ -15,12 +15,21 @@
   "devDependencies": {
     "@storybook/react": "3.4.11",
     "babel-core": "6.26.3",
+    "chokidar-cli": "1.2.1",
+    "eslint": "5.6.1",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.11.1",
+    "npm-run-all": "4.1.3",
     "prop-types": "15.6.2",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "storybook": "1.0.0"
   },
   "scripts": {
+    "lint": "eslint './{src,stories}/**/*.js'",
+    "lint:watch": "chokidar './{src,stories}/**/*.js' -c 'run-s lint'",
     "start": "start-storybook -p 8080 -c .storybook"
   },
   "author": "Penn Labs",
