@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Card Example product card 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-content"
+  >
+    <div
+      className="media"
+    >
+      <div
+        className="media-left"
+      >
+        <figure
+          className="image is-48x48"
+        >
+          <img
+            alt="Cool description"
+            src="https://pennlabs.org/img/PCR.png"
+          />
+        </figure>
+      </div>
+      <div
+        className="media-content"
+      >
+        <p
+          className="title is-4"
+        >
+          Penn Course Review
+        </p>
+        <p
+          className="subtitle is-6"
+        >
+          https://penncoursereview.com
+        </p>
+      </div>
+    </div>
+    <div
+      className="content"
+    >
+      The student-run Penn Course Review has served as a valuable guide for course selection since the 1960s. In 2014, Penn Course Review was completely redesigned to simplify the search experience. In 2018, we hope to continue providing you with the best insights on courses and have therefore updated this experience.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Hero Example 1`] = `
+<section
+  className="hero is-link is-medium"
+>
+  <div
+    className="hero-body"
+  >
+    <div
+      className="container"
+    >
+      <h1
+        className="title"
+      >
+        Penn Labs
+      </h1>
+      <h2
+        className="subtitle"
+      >
+        Penn Labs empowers others to make connections: connections to resources, connections to people, and connections to the greater Penn community.
+      </h2>
+    </div>
+  </div>
+</section>
+`;
