@@ -46,7 +46,7 @@
     "build": "env NODE_ENV=production rollup -c",
     "lint": "eslint './{src,stories}/**/*.js'",
     "lint:watch": "chokidar './{src,stories}/**/*.js' -c 'run-s lint'",
-    "start": "start-storybook -p 8080 -c .storybook"
+    "storybook": "start-storybook -p 8080 -c .storybook"
   },
   "author": "Penn Labs",
   "license": "MIT"
