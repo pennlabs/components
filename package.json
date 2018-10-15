@@ -4,18 +4,57 @@
   "description": "A collection of re-useable UI components written in React.",
   "main": "index.js",
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "bulma": "^0.7.1",
-    "isomorphic-unfetch": "^2.1.1",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "storybook": "^1.0.0"
+    "bulma": "0.7.1",
+    "isomorphic-unfetch": "3.0.0",
+    "jest": "23.6.0",
+    "shortid": "2.2.13"
+  },
+  "peerDependencies": {
+    "prop-types": "*",
+    "react": "*",
+    "react-dom": "*"
   },
   "devDependencies": {
-    "@storybook/react": "^3.4.10"
+    "@babel/core": "7.1.2",
+    "@babel/plugin-external-helpers": "7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0",
+    "@babel/preset-env": "7.1.0",
+    "@babel/preset-react": "7.0.0",
+    "@storybook/addon-storyshots": "4.0.0-alpha.4",
+    "@storybook/react": "4.0.0-alpha.4",
+    "babel-core": "^7.0.0-bridge",
+    "babel-jest": "23.6.0",
+    "babel-loader": "8.0.0-beta.6",
+    "chokidar-cli": "1.2.1",
+    "css-loader": "1.0.0",
+    "enzyme": "3.7.0",
+    "enzyme-adapter-react-16": "1.6.0",
+    "eslint": "5.6.1",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-loader": "2.1.1",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.11.1",
+    "npm-run-all": "4.1.3",
+    "prop-types": "15.6.2",
+    "react": "16.5.2",
+    "react-addons-test-utils": "15.6.2",
+    "react-dom": "16.5.2",
+    "rollup": "0.66.6",
+    "rollup-plugin-babel": "4.0.3",
+    "rollup-plugin-eslint": "5.0.0",
+    "rollup-plugin-node-resolve": "3.4.0",
+    "rollup-plugin-postcss": "1.6.2",
+    "storybook": "1.0.0",
+    "style-loader": "0.23.1"
   },
   "scripts": {
-    "start": "start-storybook -p 8080 -c .storybook"
+    "build": "env NODE_ENV=production rollup -c",
+    "lint": "eslint './{src,stories}/**/*.js'",
+    "lint:watch": "chokidar './{src,stories}/**/*.js' -c 'run-s lint'",
+    "storybook": "start-storybook -p 8080 -c .storybook",
+    "test": "env BABEL_ENV=test jest --verbose",
+    "test:watch": "env BABEL_ENV=test jest --watch"
   },
   "author": "Penn Labs",
   "license": "MIT"
