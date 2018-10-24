@@ -1,5 +1,5 @@
 # Labs Components
-A collection of re-useable UI components built using React. Developedto be integrated into the Penn Labs product suite and other student-developed applications at Penn.
+A collection of re-useable UI components built using React. Developed to be integrated into the Penn Labs product suite and other student-developed applications at Penn.
 
 You can see the components on [https://components.apps.pennlabs.org/](https://components.apps.pennlabs.org/)
 
@@ -48,4 +48,4 @@ You can take a look at the Contributing guide [here](https://github.com/pennlabs
 
 
 ## License
-You can check out the license [here](https://github.com/pennlabs/components/blob/master/LICENSE)
+You can check out the license [here](https://github.com/pennlabs/components/blob/master/LICENSE).
