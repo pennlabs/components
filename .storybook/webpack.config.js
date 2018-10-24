@@ -19,5 +19,15 @@ module.exports = (storybookBaseConfig, configType) => {
     ],
   })
 
+  storybookBaseConfig.module.rules.push({
+    test: /\.(woff|woff2|eot|ttf)$/,
+    loader: 'file-loader',
+  })
+
+  storybookBaseConfig.module.rules.push({
+    test: /\.svg$/,
+    loader: 'svg-inline-loader',
+  })
+
   return storybookBaseConfig
 }
