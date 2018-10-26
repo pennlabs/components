@@ -33,12 +33,18 @@ const Card = ({
 )
 
 Card.propTypes = {
+  /** The content of the Card */
   body: PropTypes.string.isRequired,
+  /** An image */
   image: PropTypes.shape({
+    /** The alt attribute of the image */
     alt: PropTypes.string.isRequired,
+    /** The url of the image */
     url: PropTypes.string.isRequired,
   }).isRequired,
+  /** The subtitle of the Card */
   subtitle: PropTypes.string.isRequired,
+  /** The title of the Card */
   title: PropTypes.string.isRequired,
 }
 

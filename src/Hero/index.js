@@ -18,7 +18,9 @@ const Hero = ({ title, subtitle }) => (
 )
 
 Hero.propTypes = {
+  /** The title */
   title: PropTypes.string.isRequired,
+  /** The subtitle */
   subtitle: PropTypes.string.isRequired,
 }
 

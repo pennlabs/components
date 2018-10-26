@@ -43,6 +43,16 @@ Create a production build:
 yarn build
 ```
 
+Run docz
+```
+yarn docz:dev
+```
+
+Build docz
+```
+yarn docz:build
+```
+
 ## Contributing
 You can take a look at the Contributing guide [here](https://github.com/pennlabs/components/blob/master/CONTRIBUTING.md)
 
