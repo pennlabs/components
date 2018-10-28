@@ -2,6 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Card from '../src/Card'
 import Hero from '../src/Hero'
+import Input from '../src/Input'
 
 storiesOf('Card', module).add('Example product card', () => (
   <Card
@@ -16,5 +17,34 @@ storiesOf('Card', module).add('Example product card', () => (
 ))
 
 storiesOf('Hero', module).add('Example', () => (
-  <Hero title="Penn Labs" subtitle="Penn Labs empowers others to make connections: connections to resources, connections to people, and connections to the greater Penn community." />
+  <Hero
+    title="Penn Labs"
+    subtitle="Penn Labs empowers others to make connections: connections to resources, connections to people, and connections to the greater Penn community."
+  />
 ))
+
+storiesOf('Input', module).add('Example', () => {
+  class InputState extends React.Component {
+    constructor () {
+      super()
+
+      this.state = { value: '' }
+    }
+
+    render () {
+      const { value } = this.state
+
+      return (
+        <div>
+          <p>{value}</p>
+          <Input
+            value={value}
+            onChange={e => this.setState({ value: e.target.value })}
+          />
+        </div>
+      )
+    }
+  }
+
+  return <InputState />
+})

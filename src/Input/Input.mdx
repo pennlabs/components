@@ -1,0 +1,31 @@
+---
+name: Input
+---
+
+import { Playground, PropsTable } from 'docz'
+import { State } from 'mdx-observable'
+import Input from '.'
+
+# Input
+
+<PropsTable of={Input} />
+
+## Usage
+<Playground>
+  <State initialState={{ value: '' }}>
+    {({ setState, value }) => (
+      <Input
+        value={value}
+        onChange={e => setState(s => ({ value: e } ))}
+        type="text"
+        label="Labs <3"
+        placeholder="42"
+        error={value !== '42' && value !== ''}
+        errorMessage={value !== '42' ? 'Wrong!' : ''}
+        success={value === '42'}
+        successMessage={value === '42' ? 'Right!' : ''}
+        disabled={false}
+      />
+    )}
+  </State>
+</Playground>
