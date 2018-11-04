@@ -70,3 +70,150 @@ exports[`Storyshots Hero Example 1`] = `
   </div>
 </section>
 `;
+
+exports[`Storyshots Input Basic component 1`] = `
+<div>
+  <p>
+    
+  </p>
+  <div
+    className="field"
+  >
+    
+    <div
+      className="control"
+    >
+      <input
+        className="input"
+        disabled={false}
+        onChange={[Function]}
+        placeholder=""
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input Disabled 1`] = `
+<div>
+  <p>
+    
+  </p>
+  <div
+    className="field"
+  >
+    
+    <div
+      className="control"
+    >
+      <input
+        className="input"
+        disabled={true}
+        onChange={null}
+        placeholder=""
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input Error 1`] = `
+<div>
+  <p>
+    
+  </p>
+  <div
+    className="field"
+  >
+    <div
+      className="label"
+    >
+      The answer to life, the universe and everything
+    </div>
+    <div
+      className="control"
+    >
+      <input
+        className="input is-danger"
+        disabled={false}
+        onChange={[Function]}
+        placeholder="Hint: 42"
+        type="text"
+        value=""
+      />
+    </div>
+    <p
+      className="help is-danger"
+    >
+      Error!
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input Success 1`] = `
+<div>
+  <p>
+    
+  </p>
+  <div
+    className="field"
+  >
+    <div
+      className="label"
+    >
+      The answer to life, the universe and everything
+    </div>
+    <div
+      className="control"
+    >
+      <input
+        className="input is-success"
+        disabled={false}
+        onChange={[Function]}
+        placeholder="Hint: 42"
+        type="text"
+        value=""
+      />
+    </div>
+    <p
+      className="help is-success"
+    >
+      Success!
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Input With label and placeholder 1`] = `
+<div>
+  <p>
+    
+  </p>
+  <div
+    className="field"
+  >
+    <div
+      className="label"
+    >
+      The answer to life, the universe and everything
+    </div>
+    <div
+      className="control"
+    >
+      <input
+        className="input"
+        disabled={false}
+        onChange={[Function]}
+        placeholder="Hint: 42"
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
