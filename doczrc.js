@@ -4,6 +4,7 @@ export default {
   title: 'Penn Labs Components',
   description: 'A collection of re-useable UI components built using React.',
   dest: '/docs',
+  base: '/components/',
   themeConfig: {
     mode: 'dark',
   },
