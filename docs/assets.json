@@ -1,9 +1,10 @@
 {
-  "vendors.css": "/static/css/vendors.50f8d75970f4f130d2c3.css",
-  "vendors.js": "/static/js/vendors.0fe9b130.js",
-  "app.js": "/static/js/app.bd7156d0.js",
-  "runtime~app.js": "/static/js/runtime~app.50f8d75970f4f130d2c3.js",
-  "src-card-card.js": "/static/js/src-card-card.885be52d.js",
-  "src-hero-hero.js": "/static/js/src-hero-hero.115b6fcb.js",
-  "index.html": "/index.html"
+  "vendors.css": "/components/static/css/vendors.a7ddac2b2aaa34a584ea.css",
+  "vendors.js": "/components/static/js/vendors.34f3a2a0.js",
+  "app.js": "/components/static/js/app.86f47977.js",
+  "runtime~app.js": "/components/static/js/runtime~app.a7ddac2b2aaa34a584ea.js",
+  "src-card-card.js": "/components/static/js/src-card-card.885be52d.js",
+  "src-hero-hero.js": "/components/static/js/src-hero-hero.115b6fcb.js",
+  "src-input-input.js": "/components/static/js/src-input-input.5a6c2401.js",
+  "index.html": "/components/index.html"
 }

@@ -2,6 +2,7 @@ import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve'
 import { eslint } from 'rollup-plugin-eslint'
 import postcss from 'rollup-plugin-postcss'
+import commonjs from 'rollup-plugin-commonjs'
 
 export default {
   input: 'src/index.js',
@@ -17,6 +18,11 @@ export default {
     }),
     babel({
       exclude: 'node_modules/**',
+    }),
+    commonjs({
+      namedExports: {
+        'node_modules/classnames/index.js': ['cx'],
+      },
     }),
     postcss({
       plugins: [],
