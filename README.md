@@ -1,61 +1,19 @@
-# Labs Components
+<a href="https://components.pennlabs.org" target="_blank" rel="noopener noreferrer"><img width="350" src="https://i.imgur.com/c4b4iCB.png" alt="Components Logo"></a>
+
 A collection of re-useable UI components built using React. Developed to be integrated into the Penn Labs product suite and other student-developed applications at Penn.
 
-You can see the components on [https://components.apps.pennlabs.org/](https://components.apps.pennlabs.org/)
+View the available components at [https://components.pennlabs.org/](https://components.pennlabs.org/).
 
 
-## Configuration and storybook
-First, install the dependencies:
-```
-yarn install
-```
-
-After that, you can run
-```
-yarn storybook
-```
-in order to run Storybook
-
-
-## Useful commands
-Run the lint once:
-```
-yarn lint
-```
-
-Run the lint on every file change:
-```
-yarn lint:watch
-```
-
-Run tests once:
-```
-yarn test
-```
-
-Run tests on every change on test files:
-```
-yarn test:watch
-```
-
-Create a production build:
-```
-yarn build
-```
-
-Run docz
-```
-yarn docz:dev
-```
-
-Build docz
-```
-yarn docz:build
-```
+## Installation
+1. Install dependencies using `yarn`.
+2. Run Storybook interface using `yarn storybook`.
+3. (Optional) Run linter once using `yarn lint` or on file change using `yarn lint:watch`.
+4. (Optional) Run tests once using `yarn test` or on file change using `yarn test:watch`.
+5. (Optional) Create production build using `yarn build`.
 
 ## Contributing
-You can take a look at the Contributing guide [here](https://github.com/pennlabs/components/blob/master/CONTRIBUTING.md)
-
+Our contribution guide is available [here](https://github.com/pennlabs/components/blob/master/CONTRIBUTING.md). Documentation for the project is availale using [Docz](https://www.docz.site) and can be run using `yarn docz:dev` or built using `yarn docz:build`.
 
 ## License
-You can check out the license [here](https://github.com/pennlabs/components/blob/master/LICENSE).
+The Labs Components project is [MIT Licensed](https://github.com/pennlabs/components/blob/master/LICENSE).
