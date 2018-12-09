@@ -16,7 +16,6 @@ class Dropdown extends Component {
     }
 
     this.openDropdown = this.openDropdown.bind(this)
-    this.activateItem = this.activateItem.bind(this)
     this.closeDropdown = this.closeDropdown.bind(this)
     this.toggleDropdown = this.toggleDropdown.bind(this)
     this.renderItems = this.renderItems.bind(this)
@@ -54,6 +53,7 @@ class Dropdown extends Component {
     const {
       items,
       selectedItem,
+      onChange,
     } = this.props
 
     return items.map(({ key, text }) => {
@@ -63,13 +63,13 @@ class Dropdown extends Component {
       })
 
       return (
-        <option
+        <a
           key={key}
-          className={itemClass}
-          value={key}
+          className="dropdown-item"
+          onClick={() => onChange(key)}
         >
           {text}
-        </option>
+        </a>
       )
     })
   }
@@ -79,24 +79,58 @@ class Dropdown extends Component {
       onChange,
       selectedItem,
       placeholder,
+      round,
     } = this.props
 
     return (
-      <select
-        id={this.instanceId}
-        onChange={onChange}
-        defaultValue={selectedItem || 'placeholder'}
-      >
-        <option
-          disabled
-          hidden
-          value="placeholder"
+      <div className="dropdown is-active">
+        <div className="dropdown-trigger">
+          <button
+            className="button"
+            aria-haspopup="true"
+            aria-controls="dropdown-menu"
+          >
+            <span>{selectedItem || placeholder || ''}</span>
+            <span className="icon is-small">
+              <i
+                className="fas fa-angle-down"
+                aria-hidden="true"
+              />
+            </span>
+          </button>
+        </div>
+        <div
+          className="dropdown-menu"
+          id="dropdown-menu"
+          role="menu"
         >
-          {placeholder}
-        </option>
-        {this.renderItems()}
-      </select>
+          <div className="dropdown-content">
+            {this.renderItems()}
+          </div>
+        </div>
+      </div>
     )
+
+    /*
+    return (
+      <div className={selectClasses}>
+        <select
+          id={this.instanceId}
+          onChange={onChange}
+          defaultValue={selectedItem || 'placeholder'}
+        >
+          <option
+            disabled
+            hidden
+            value="placeholder"
+          >
+            {placeholder}
+          </option>
+          {this.renderItems()}
+        </select>
+      </div>
+    )
+    */
   }
 }
 
@@ -109,10 +143,12 @@ Dropdown.propTypes = {
     key: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
   })).isRequired,
+  round: PropTypes.bool,
 }
 
 Dropdown.defaultProps = {
   placeholder: '',
+  round: false,
 }
 
 export default onClickOutside(Dropdown)
