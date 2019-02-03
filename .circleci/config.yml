@@ -33,8 +33,8 @@ jobs:
           name: Deploy docs
           command: |
             if [ $CIRCLE_BRANCH == $SOURCE_BRANCH ]; then
-              git config --global user.email $GH_EMAIL
-              git config --global user.name $GH_NAME
+              git config --global user.email "$GH_EMAIL"
+              git config --global user.name "$GH_NAME"
 
               git clone $CIRCLE_REPOSITORY_URL out
 
